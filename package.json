@@ -25,7 +25,6 @@
     "gulp-svgstore": "^6.1.0",
     "nib": "^1.1.2",
     "normalize.css": "^7.0.0",
-    "parallax-js": "git+https://github.com/wagerfield/parallax.git",
     "raf": "^3.3.2",
     "run-sequence": "^1.2.2",
     "smart-grid": "^1.1.0",
