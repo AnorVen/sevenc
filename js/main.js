@@ -30,16 +30,27 @@ $( document ).ready(function(){
   $(function(){
     var $mainFig = $('.our-works__figuration'); //массив самих закладок
     $mainFig.hide();
-    var $links =  $('.our-works__list .our-works__link');
+    var $links =  $('.our-works__link');
     //обрабатываем клики по табам
     $links.mouseenter(function(){
       $mainFig.hide(); //прячем все табы
+      console.log(this.children);
+      $mainFig.filter(this.children).show();
+      //this.children(".our-works__figuration").css("display", "block");
+     // this.children.css("display","block");
+       //показываем содержимое текущего
 
-      this.children().show(); //показываем содержимое текущего
-      return false;
     });
 
   })
+
+
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest(".header").length) {
+      $('.header__menu').hide();
+    }
+    e.stopPropagation();
+  });
 
 });
 
