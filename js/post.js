@@ -50,6 +50,18 @@ $( document ).ready(function(){
     }
     e.stopPropagation();
   });
+var postList = $(".post__list");
+
+
+  postList.onepage_scroll({
+      sectionContainer: "section",
+      loop: false,
+      responsiveFallback: false
+    });
+
+  postList.scrollspy({ target: '.post__nav' });
+
+
 
 
 

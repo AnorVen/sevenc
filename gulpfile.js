@@ -70,7 +70,8 @@ gulp.task("copy", ["html:copy"], function () {
     "fonts/**/*",
     "img/**",
     "js/**",
-    "video/*"
+    "video/*",
+    "css/*"
 
   ], {
     base: "."
